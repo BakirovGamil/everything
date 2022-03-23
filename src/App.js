@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Product from './components/Product';
+import User from './components/User';
+import Employee from './components/Employee';
+import id from 'react-uuid';
+import Products from './components/Products';
+import Users from './components/Users';
+import FilterableProductTable from './components/FilterableProductTable';
+import Map from './components/Map';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return  <div>
+      <Map/>
+    </div>;
 }
 
 export default App;
